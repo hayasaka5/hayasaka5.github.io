@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.icons_menu img{
+    width:2vw;
+    height: 2vw;
+    padding: 0 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* font-size: 36px; */
+    font-size: 3vw;
+    /* padding: 20px; */
+    padding: 2vw;
+    height: 5vw;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.section1 img{
+    width: 100%;
+    padding-top: 5vw;
+}
+.section1 a{
+    /* font-size: 2em; */
+    font-size: 2vw;
+}
+.section1 span{
+    /* font-size: 3em; */
+    font-size: 4vw;
+}
+
+.section2, .section3{
+    padding: 7vw;
+    align-items: center;
+    display: flex;
+}
+.text_wrap{
+    padding: 5vh;
+    /* font-size: 3rem; */
+    font-size: 3vw;
+    width: 30vw;
+}
+.section4{
+    padding: 10vw 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+
+}
+.text_wrap2 div{
+    /* font-size: 3rem; */
+    font-size: 3vw;
+}
+.text_wrap2{
+    display: flex;
+    gap: 3vw;
+}
+.big-text{
+    width: 25vw;
+}
+.section4 a{
+    /* font-size: 4rem; */
+    font-size: 4vw;
+}
+.small_text span{
+    /* font-size: 2rem; */
+    font-size: 2vw;
+    line-height: 0.9;
+}
+.small_text{
+    line-height: 0.7;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-size: 2rem; */
+    font-size: 2vw;
+    gap: 2vw;
+    padding: 5vw;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+footer a{
+    /* font-size:3rem; */
+    font-size: 3vw;
+}
+img {
+    width: 100%;
+    height: auto; /* Это гарантирует сохранение пропорций картинки */
+}
+ .section5{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+     gap: 2vw;
+    padding: 0 4vw;
+    width: 100%;
+} 
+.section5 img{
+    width: 18.75vw; 
+    height: 11.25vw; 
+}
+.section5 img:hover{
+    background-color: black;
+} 
+.section5 div {
+    position: relative; /* Позиционируем родительский контейнер */
+    overflow: hidden;
+}
+
+.section5 div::after {
+    content: "Надпись"; /* Текст для псевдоэлемента */
+    position: absolute; /* Позиционируем псевдоэлемент относительно родителя */
+    top: 0; /* Располагаем сверху */
+    left: 0; /* Располагаем слева */
+    width: 100%; /* Занимаем всю ширину родителя */
+    height: 100%; /* Занимаем всю высоту родителя */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
+    color: white; /* Цвет текста */
+    font-size: 20px; /* Размер шрифта */
+    text-align: center; /* Выравниваем текст по центру */
+    line-height: 100%; /* Выравниваем текст по вертикали */
+    padding-top: 50%; /* Смещаем текст вниз на половину родителя */
+    opacity: 0; /* Начальная прозрачность (псевдоэлемент будет невидимым) */
+    transition: opacity 0.3s; /* Добавляем плавный переход для изменения прозрачности */
+}
+
+.section5 div:hover::after {
+    opacity: 1; /* При наведении мыши делаем псевдоэлемент видимым */
+}
+
+@media only screen and (max-width: 760px) {
+    /* .section3{
+            flex-direction: column;
+        }
+        .section2{
+            flex-direction: column-reverse;
+        } */
+        .section5 {
+        grid-template-columns: 1fr; 
+        padding: 0; 
+        gap: 0.5vw;
+        }
+        .section5 img{
+            height: 45vw;
+            width: 100%;
+            max-width: 100%;
+        }
+}
