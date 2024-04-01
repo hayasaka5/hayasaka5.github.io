@@ -111,7 +111,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
      gap: 2vw;
-    padding: 0 4vw;
+    padding: 2vw;
     width: 100%;
 } 
 .section5 img{
