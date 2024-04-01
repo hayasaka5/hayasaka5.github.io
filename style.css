@@ -118,34 +118,7 @@ img {
     width: 18.75vw; 
     height: 11.25vw; 
 }
-.section5 img:hover{
-    background-color: black;
-} 
-.section5 div {
-    position: relative; /* Позиционируем родительский контейнер */
-    overflow: hidden;
-}
 
-.section5 div::after {
-    content: "Надпись"; /* Текст для псевдоэлемента */
-    position: absolute; /* Позиционируем псевдоэлемент относительно родителя */
-    top: 0; /* Располагаем сверху */
-    left: 0; /* Располагаем слева */
-    width: 100%; /* Занимаем всю ширину родителя */
-    height: 100%; /* Занимаем всю высоту родителя */
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
-    color: white; /* Цвет текста */
-    font-size: 20px; /* Размер шрифта */
-    text-align: center; /* Выравниваем текст по центру */
-    line-height: 100%; /* Выравниваем текст по вертикали */
-    padding-top: 50%; /* Смещаем текст вниз на половину родителя */
-    opacity: 0; /* Начальная прозрачность (псевдоэлемент будет невидимым) */
-    transition: opacity 0.3s; /* Добавляем плавный переход для изменения прозрачности */
-}
-
-.section5 div:hover::after {
-    opacity: 1; /* При наведении мыши делаем псевдоэлемент видимым */
-}
 
 @media only screen and (max-width: 760px) {
     /* .section3{
