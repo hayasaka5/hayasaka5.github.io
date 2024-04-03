@@ -10,46 +10,69 @@
 </head>
 <body>
     <header>
-        <div>
-            <a>+1 (256) 10 87 000</a> 
+        <div >
+            <span>+1 (256) 10 87 000</span> 
         </div>
-        <div class="icons_menu">
-            <a href="#"><img src="facebook.svg" alt=""></a>
-            <a href="#"><img src="instagram.svg" alt=""></a>
-            <a href="#"><img src="telegram.svg" alt=""></a>
-            <a href="#"><img src="tiktok.svg" alt=""></a>
-            <a href="#"><img src="youtube.svg" alt=""></a>
+        <!-- <div class="icons_menu">
+            <a href="#"><img src="img/facebook.svg" alt=""></a>
+            <a href="#"><img src="img/instagram.svg" alt=""></a>
+            <a href="#"><img src="img/telegram.svg" alt=""></a>
+            <a href="#"><img src="img/tiktok.svg" alt=""></a>
+            <a href="#"><img src="img/youtube.svg" alt=""></a>
+        </div> -->
+        <div class="nav_menu " id="animation2s">
+            <a href="#description">Description</a>
+            <a href="#why_i_do">Why I do this</a>
+            <a href="#consultation">Consultation</a>
+            <a href="#my_works">My Works</a>
         </div>
-        
     </header>
-    <div class="section1">
-        <a>Adam Smith</a>
-        <span>Welcome <br>to my vision of modern tattoo</span>
+    <main>
+    <div class="section1" >
+        <a class="animation1s">Adam Smith</a>
+        <span class="animation1s">Welcome <br>to my vision of modern tattoo</span>
         <img src="section1.png" alt="">
     </div>
-    <div class="section2">
+    <div class="section2" id="description">
         <div>
         <img src="section2.png" alt=""></div>
-        <div class="text_wrap">
+        <div class="text_wrap animation1s">
         <a >Be sure in an incredible design for your tattoos. Because I am not drawing, I create a tattoo with history.</a></div>
     </div>
-    <div class="section3">
-        <div class="text_wrap">
+    <div class="section3" >
+        <div class="text_wrap animation1s">
             Enjoy tattoo out of cleaning. I use only quality equipment.
         </div>
         <div>
             <img src="section3.png" alt="">
     </div>
    </div>
-   <div class="section4">
-    <div><a >Why I do this</a></div>
+   <div class="section4" id="why_i_do">
+    <div><a  class="animation1s">Why I do this</a></div>
     <div class="text_wrap2">
-    <div class="big-text">Some years ago I realized the beauty of totally black pictures, especially on the human’s body. So I concentrate only on this color ever since and create a unique every simple line.</div>
-    <div class="big-text">Using For This Only High-Quality Materials And Equipment You Can Be Sure In Your Tattoos.
-        <div class="small_text"><span>Collaboration starts with the first meeting where we discuss all design aspects and all your predilections to the future tattoo. Be sure in your originality.</span></div>
+    <div class="big-text animation1s" style="transition-delay: 0.5s;" >Some years ago I realized the beauty of totally black pictures, especially on the human’s body. So I concentrate only on this color ever since and create a unique every simple line.</div>
+    <div class="big-text animation1s" style="transition-delay:0.5s;">Using For This Only High-Quality Materials And Equipment You Can Be Sure In Your Tattoos.
+        <div class="small_text animation1s" style="transition-delay: 1s;"><span>Collaboration starts with the first meeting where we discuss all design aspects and all your predilections to the future tattoo. Be sure in your originality.</span></div>
     </div>
 
    </div></div>
+   <div class="section6_wrap">
+   <div class="section6" id="consultation">
+    <div class="text_wrap3 animation1s">
+        <div class="text_wrap3_1"><a >A consultation for only $60</a></div>
+        <p>At this meeting we will discuss your ideas, preferences and any questions you may have. We pay special attention to design, technology and safety to ensure you receive the highest level of quality and comfort. Our team of professionals is always ready to help you turn your dreams into reality. Let's work together to create a unique and personalized work of art on your body!</p>
+    </div>
+    <div class="section6_2 animation1s">
+        <div class="text_wrap4_2"><a>Make a reservation at Booksy</a></div>
+    <a href="#"><button><img src="Booksy.svg" alt=""></button></a>
+    
+   </div>
+   
+</div>
+<div class="text_wrap4_1"> <div>Or contact us:</div> <div>info@demolink.org </div> <div>+1 (256) 10 87 000</div></div> </div>
+</div>
+   <div class="section5_wrap" id="my_works">
+   <div class="section5_text">My Works</div>
    <div class="section5">
     <div><img src="section1.png" alt=""></div>
     <div><img src="img2.jpg" alt=""></div>
@@ -64,23 +87,41 @@
     <div><img src="img11.jpg" alt=""></div>
     <div><img src="img12.jpg" alt=""></div>
     <div><img src="img13.jpg" alt=""></div>
-    <div><img src="img14.jpg" alt=""></div>
-    <div><img src="img15.jpg" alt=""></div>
-    <div><img src="img16.jpg" alt=""></div>
+    <div><img src="img14.png" alt=""></div>
+    <div><img src="img15.png" alt=""></div>
+    <div><img src="img16.png" alt=""></div>
 
-   </div>
- 
+   </div></div>
+</main>
    <footer>
     <div>761b WuStrasse Burste, Amsterdam, NL</div>
     <div><a>+1 (256) 10 87 000</a></div>
-    <div>info@demolink.org</div>
+    <div>info@demolink.org
+    </div>
     <div class="icons_menu">
-        <img src="facebook.svg" alt="">
-        <img src="instagram.svg" alt="">
-        <img src="telegram.svg" alt="">
-        <img src="tiktok.svg" alt="">
-        <img src="youtube.svg" alt="">
+        <a href="#"><img src="facebook.svg" alt=""></a>
+        <a href="#"><img src="instagram.svg" alt=""></a>
+        <a href="#"><img src="telegram.svg" alt=""></a>
+        <a href="#"><img src="tiktok.svg" alt=""></a>
+        <a href="#"><img src="youtube.svg" alt=""></a>        
     </div>
    </footer>
+   <script>
+const animation_elements = document.querySelectorAll('.animation1s, .animation2s');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        } else {
+            entry.target.classList.remove('animate');
+        }
+    });
+});
+
+animation_elements.forEach((el) => {
+    observer.observe(el);
+});
+   </script>
 </body>
 </html>
