@@ -12,20 +12,28 @@ body{
     height: 2vw;
     padding: 0 2vw;
 }
- header span{
+.hamburger img{
+    width: 4vw;
+    height: 4vw;
+
+}
+.hamburger{
+    display: none;
+}
+ .header_wrap span{
     font-size: 1.5vw;
  }
- header a{
+ .header_wrap a{
     text-decoration: none;
     color: rgb(77, 77, 77);
     padding: 0 1vw;
  }
- header a:hover{
+ .header_wrap a:hover{
     color: rgb(197, 176, 176);
     transition-delay: 0.2s;
     transition: 0.1s ease-in-out;
  }
-header{
+.header_wrap{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +73,7 @@ header{
     display: flex;
 }
 .text_wrap{
-    padding: 5vh;
+    padding: 5vw;
     /* font-size: 3rem; */
     font-size: 3vw;
     width: 30vw;
@@ -273,7 +281,43 @@ img {
     opacity: 0;
     transition: all 2s;
 }
+.mobile_menu_active{
+    position: fixed;
+    width: 80vw;
+    background-color: rgb(77, 77, 77);
+    left:20vw;
+    height: 100vh;
+    top: 0;
+    z-index: 999;
+}
+.xmark{
+   position: fixed;
+   right: 0;
+   padding: 2vw;
+  
+}
+.mobile_menu_active img{
+    height: 3vw;
+    width: 3vw;
 
+}
+.mobile_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vw;
+    transition: 1s ease-in-out;
+}
+.mobile_nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 5vw;
+   padding: 3vw;
+}
+.mobile_menu{
+    display: none;
+}
 @media only screen and (max-width: 760px) {
     /* .section3{
             flex-direction: column;
@@ -292,4 +336,25 @@ img {
             width: 100%;
             max-width: 100%;
         } */
+        .nav_menu{
+            display: none;
+        }
+        .hamburger{
+     
+            display: block;
+        }
+        /* .mobile_menu{
+            display: none;
+        } */
+        .text_wrap{
+            width: 55vw;
+        }
+        .header_wrap{
+            padding-top: 1vw;
+            padding-left: 4vw;
+        }
+        .header_wrap div span{
+            font-size: 3vw;
+        }
+        
 }

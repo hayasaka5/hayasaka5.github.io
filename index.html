@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <div class="header_wrap">
         <div >
             <span>+1 (256) 10 87 000</span> 
         </div>
@@ -20,14 +21,29 @@
             <a href="#"><img src="img/tiktok.svg" alt=""></a>
             <a href="#"><img src="img/youtube.svg" alt=""></a>
         </div> -->
-        <div class="nav_menu " id="animation2s">
+        <div class="nav_menu ">
             <a href="#description">Description</a>
             <a href="#why_i_do">Why I do this</a>
             <a href="#consultation">Consultation</a>
             <a href="#my_works">My Works</a>
+           
         </div>
+        <div class="hamburger">
+            <a id="hamburger"><img src="bars-solid.svg" alt=""></a></div>
+    </div>
+        
     </header>
     <main>
+        <div class="mobile_menu" id="mobile_menu">
+            <div class="xmark" >
+                <a id="xmark"><img src="xmark.png" alt=""></a>
+            </div>
+            <div class="mobile_nav">
+            <a class="mobile_nav_button" href="#description">Description</a>
+            <a class="mobile_nav_button" href="#why_i_do">Why I do this</a>
+            <a class="mobile_nav_button" href="#consultation">Consultation</a>
+            <a class="mobile_nav_button" href="#my_works">My Works</a></div>
+        </div>
     <div class="section1" >
         <a class="animation1s">Adam Smith</a>
         <span class="animation1s">Welcome <br>to my vision of modern tattoo</span>
@@ -122,6 +138,32 @@ const observer = new IntersectionObserver((entries) => {
 animation_elements.forEach((el) => {
     observer.observe(el);
 });
+
+// function hamburger_click(){
+//     const mobile_menu=document.querySelector('.mobile_menu');
+//     mobile_menu.classList.remove('mobile_menu')
+//     mobile_menu.classList.add('mobile_menu_active')
+// }
+function hamburger_click(){
+    const mobile_menu=document.getElementById('mobile_menu');
+    if(mobile_menu.classList.contains('mobile_menu')){
+    mobile_menu.classList.remove('mobile_menu')
+    mobile_menu.classList.add('mobile_menu_active')}
+    else{
+        mobile_menu.classList.remove('mobile_menu_active')
+    mobile_menu.classList.add('mobile_menu')
+    }
+}
+const hamburger=document.getElementById('hamburger');
+hamburger.addEventListener('click',hamburger_click)
+const xmark=document.getElementById('xmark')
+xmark.addEventListener('click',hamburger_click)
+let mobile_nav_buttons = document.querySelectorAll('.mobile_nav_button');
+
+mobile_nav_buttons.forEach(button => {
+    button.addEventListener('click', hamburger_click);
+});
+
    </script>
 </body>
 </html>
