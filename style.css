@@ -293,12 +293,12 @@ img {
 .xmark{
    position: fixed;
    right: 0;
-   padding: 2vw;
+   padding: 5vw 10vw 0 0;
   
 }
 .mobile_menu_active img{
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
 
 }
 .mobile_nav{
@@ -340,7 +340,7 @@ img {
             display: none;
         }
         .hamburger{
-     
+    
             display: block;
         }
         /* .mobile_menu{
@@ -356,5 +356,6 @@ img {
         .header_wrap div span{
             font-size: 3vw;
         }
+        
         
 }
