@@ -320,7 +320,7 @@ img {
     display: none;
 }
 @media only screen and (max-width: 760px){
-    
+
 }
 @media only screen and (max-width: 760px) {
     /* .section3{
@@ -356,15 +356,16 @@ img {
         .header_wrap{
             padding-top: 1vw;
             padding-left: 4vw;
-            
+           
         }
         header{
             position: fixed;
             top: 0;
             width: 100%;
+            padding: 0.5vw 1vw;
             background-color: rgba(255,255,255,0.5);
             backdrop-filter: blur(10px);
-            padding-bottom: 0.5vw;
+    
         }
         .header_wrap div span{
             font-size: 3vw;
