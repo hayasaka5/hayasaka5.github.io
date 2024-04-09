@@ -55,8 +55,9 @@ body{
     border: none;
 }
 .section1 img{
-    width: 100%;
+    width: 100vw;
     padding-top: 7vw;
+    height: auto;
 }
 .section1 a{
     /* font-size: 2em; */
@@ -318,6 +319,9 @@ img {
 .mobile_menu{
     display: none;
 }
+@media only screen and (max-width: 760px){
+    
+}
 @media only screen and (max-width: 760px) {
     /* .section3{
             flex-direction: column;
@@ -370,7 +374,7 @@ img {
             overflow: hidden;
         }
         .section1{
-            margin-top: 10vw;
+            margin-top: 6vw;
         }
         
 }
