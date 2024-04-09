@@ -293,7 +293,7 @@ img {
 .xmark{
    position: fixed;
    right: 0;
-   padding: 5vw 10vw 0 0;
+   padding: 5vw 5vw 0 0;
   
 }
 .mobile_menu_active img{
@@ -352,10 +352,25 @@ img {
         .header_wrap{
             padding-top: 1vw;
             padding-left: 4vw;
+            
+        }
+        header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255,255,255,0.5);
+            backdrop-filter: blur(10px);
+            padding-bottom: 0.5vw;
         }
         .header_wrap div span{
             font-size: 3vw;
         }
-        
+        .section5_wrap{
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+        .section1{
+            margin-top: 10vw;
+        }
         
 }
